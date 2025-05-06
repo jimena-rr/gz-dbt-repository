@@ -43,9 +43,9 @@ sources:
               - unique
               - not_null
           - name: shipping_fee
-            description: cost of shippment
+            description: how much the client paid for shipping
           - name: shipping_fee_1
             description: cost of shippment again
           - name: logCost
-            description: cost of loggistics
+            description: how much it costs to the company to organize the shipping
           - name: ship_cost
