@@ -10,20 +10,42 @@ sources:
         identifier: raw_gz_product
         columns:
           - name: products_id
+            description: number for each product
+            tests:
+              - unique
+              - not_null  
           - name: purchSE_PRICE
+            description: price of each product
       - name: sales
         identifier: raw_gz_sales
+        description: sales of Greenweez / we have on row per product_id found in each orders_id
         columns:
           - name: date_date
+            description: date of purchase
+            tests:
+              - not_null
           - name: orders_id
+            description: number to identify the orders
+            tests:
+              - not_null
           - name: pdt_id
+            description: number given to each product
           - name: revenue
+            description: money made from the order
           - name: quantity 
+            description: amount of items bought in each order
       - name: ship
         identifier: raw_gz_ship
         columns:
           - name: orders_id
+            description: order number
+            tests:
+              - unique
+              - not_null
           - name: shipping_fee
+            description: cost of shippment
           - name: shipping_fee_1
+            description: cost of shippment again
           - name: logCost
+            description: cost of loggistics
           - name: ship_cost
