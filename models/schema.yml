@@ -49,3 +49,43 @@ sources:
           - name: logCost
             description: how much it costs to the company to organize the shipping
           - name: ship_cost
+      - name: adwords
+        identifier: raw_gz_adwords
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+      - name: bing
+        identifier: raw_gz_bing
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+      - name: criteo
+        identifier: raw_gz_criteo
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+      - name: facebook
+        identifier: raw_gz_facebook
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
